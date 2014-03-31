@@ -1,0 +1,4 @@
+<h1> #{postTitle post}
+<hr>
+<a href=@{HomeR}>
+    Return

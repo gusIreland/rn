@@ -1,0 +1,9 @@
+<h1>Posts
+<a href=@{CreateR} > Create new post
+$if null posts
+    <p> There are no posts on the site
+$else
+    <ul>
+        $forall Entity postId post <- posts
+            <li>
+                <a href=@{PostR postId} > #{postTitle post}

@@ -1,0 +1,10 @@
+<h1>Posts
+<a href=@{createR}
+$if null posts
+    <p> There are no posts in the blog
+$else
+    <ul>
+        $forall Entity postId post <- posts
+            <li>
+                <a href=@{PostR postId} > #{postTitle post}
+<hr>
