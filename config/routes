@@ -6,4 +6,5 @@
 
 / HomeR GET POST
 /posts/#PostId PostR GET POST
-/create CreateR GET POST
+/posts 		   PostsR GET POST
+/comments CommentsR GET POST
